@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Vehicle Dispatching System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Emergency Vehicle Dispatching System</h1>
+        <form id="dispatchForm">
+
+
+            <label for="startZip">Enter Start Zip Code:</label>
+            <input type="text" id="startZip" required>
+
+
+            <label for="endZip">Enter Destination Zip Code:</label>
+            <input type="text" id="endZip" required>
+
+            <label for="vehicleType">Select Vehicle Type:</label>
+            <select id="vehicleType">
+                <option value="ambulance">Ambulance</option>
+                <option value="firetruck">Fire Truck</option>
+                <option value="police">Police Car</option>
+            </select>
+
+            <button type="submit">Find Shortest Route</button>
+        </form>
+
+
+        <div id="result"></div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+
+</html>

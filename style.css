@@ -1,0 +1,148 @@
+/* Reset some default styles for consistency */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+/*root em */
+
+.container {
+    background: #ffffff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004099;
+}
+
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#result.success {
+    color: #28a745;
+    /* Green for successful results */
+}
+
+#result.error {
+    color: #dc3545;
+    /* Red for errors */
+}
+
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    word-wrap: break-word;
+    /* Allow text to wrap onto the next line */
+    white-space: normal;
+    overflow-wrap: break-word;
+    /* For browsers that support it */
+    word-break: break-all;
+    /* To prevent text from overflowing container */
+    max-width: 100%;
+}
+
+#result p {
+    margin: 0.8rem 0;
+}
+
+#result .distance {
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+#result .route,
+#result .spots {
+    font-weight: normal;
+    color: #007bff;
+    font-size: 1.1rem;
+}
+
+#result .spots {
+    font-style: italic;
+}
